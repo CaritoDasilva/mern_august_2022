@@ -1,0 +1,17 @@
+$base-color: #c6538c;
+
+.project-container {
+    background-color: aquamarine;
+
+    .text-container {
+        h1 {
+            color: $base-color;
+        }
+    }
+
+    .text-container2 {
+        h1 {
+            color: purple;
+        }
+    }
+}

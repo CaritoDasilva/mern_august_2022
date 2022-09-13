@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Manipulación del DOM</title>
+</head>
+
+<body>
+    <div>
+        <button onclick="greetAndGoodBye(this)" onmouseover="changeColor(this)" onmouseout="returnColor(this)">Click
+            me!</button>
+        <button onmouseover="changeColor(this)" onmouseout="returnColor(this)">Clickea</button>
+    </div>
+    <div>
+        <img onmouseover="changeImage(this)" onmouseout="changeImage(this)"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8TXmMD_Y2Ibvww6xBPAh3ifPngtO6_ffSsg&usqp=CAU"
+            alt="">
+    </div>
+    <div class="formContainer">
+        <form action="" onsubmit="sendComment(event)">
+            <label for="comment">Ingresa tu comentario</label>
+            <textarea name="comment" id="commentInput" placeholder="Este es mi comentario bkn..." cols="30"
+                rows="10"></textarea>
+            <button type="submit">Enviar comentario</button>
+        </form>
+    </div>
+    <div id="postContainer"></div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

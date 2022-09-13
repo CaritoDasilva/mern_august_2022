@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+.box {
+  height: 100vh;
+  /* display: inline-block; */
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.box-left-container {
+  background-image: url("https://abs.twimg.com/sticky/illustrations/lohp_1302x955.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 54%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-right-container {
+  background-color: black;
+  width: 46%;
+  padding: 35px;
+}
+
+.icon-twitter {
+  width: 45px;
+  height: auto;
+}
+
+.title-container {
+  margin: 48px 0;
+  width: 515px;
+}
+
+h1,
+h3 {
+  color: #fff;
+}
+
+h1,
+h3,
+button {
+  font-family: "Kanit", sans-serif;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+.subtitle-container h3 {
+  font-size: 38px;
+  margin-bottom: 32px;
+}
+
+.btns-container {
+  display: flex;
+  flex-direction: column;
+}
+
+button img {
+  width: 16px;
+  margin-right: 5px;
+}
+
+button,
+.divisor-container {
+  margin-bottom: 20px;
+}
+
+.divisor-container {
+  display: flex;
+}
+
+.divisor-container div {
+  border-bottom: 1px solid rgb(47, 51, 54);
+  height: 10px;
+  width: 141px;
+  margin-top: 1px;
+}
+
+.divisor-container span {
+  color: #ffffff;
+}
+
+button {
+  width: 320px;
+  height: 44px;
+  border-radius: 35px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  border: none;
+}
+
+.conditions-text-container,
+.divisor-container {
+  width: 320px;
+}
+
+/* button span {
+    align-self: baseline;
+} */
+.google-login {
+  background-color: #E6E7E8;
+}
+
+.google-login:hover {
+  background-color: #ffffff;
+}
+
+.apple-login {
+  background-color: rgb(255, 255, 255);
+}
+
+.apple-login:hover {
+  background-color: #E6E6E6;
+}
+
+.register {
+  background-color: rgb(29, 155, 240);
+  color: #ffffff;
+}
+
+.register:hover {
+  background-color: rgb(26, 131, 202);
+}
+
+.divisor-container {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,3 @@
 Hola soy un cambio!+
 
-
-
-JOSEMARIA: Hola!
+Josemaria: Hola!

@@ -5,7 +5,7 @@ cambio realizado por CLB
 Cambio a la otra rama
 Hola soy otro cambio de la rama feature/example-branch
 
-Quiero generar conflictos 
+Quiero generar conflictos
 
 creo que hice un cambio
 
@@ -15,6 +15,6 @@ Ya hice una rama, se llama Daniela
 
 Hola soy otro cambio de la rama feature/example-branch
 
-Quiero generar conflictos 
+Quiero generar conflictos
 
 

@@ -1,4 +1,18 @@
 Hola soy un cambio!
+soy un cambio de Alvaro :D
+Hola soy un cambio!+
+
+Josemaria: Hola!
+
+Josemaria_2: Hola!
+
+Josemaria_3: Hola (otra vez)
+Hola soy un cambio! de yoisell
+Hola soy un cambio!
+
+Hola soy otro cambio de la rama feature/example-branch
+Hola soy un nuevo cambio! djk
+Hola soy un cambio!
 
 cambio realizado por CLB
 
@@ -17,4 +31,8 @@ Hola soy otro cambio de la rama feature/example-branch
 
 Quiero generar conflictos
 
+cualquier cosita gio 
 
+Quiero generar conflictos 
+
+Cambio Seba

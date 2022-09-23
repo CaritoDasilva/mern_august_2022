@@ -16,7 +16,7 @@ Hola soy un cambio!
 
 cambio realizado por CLB
 
-Cambio a la otra rama
+Cambioa la otra rama
 Hola soy otro cambio de la rama feature/example-branch
 
 Quiero generar conflictos
@@ -31,8 +31,8 @@ Hola soy otro cambio de la rama feature/example-branch
 
 Quiero generar conflictos
 
-cualquier cosita gio 
+cualquier cosita gio
 
-Quiero generar conflictos 
+Quiero generar conflictos
 
 Cambio Seba

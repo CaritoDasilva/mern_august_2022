@@ -1,6 +1,10 @@
 // Promesas sirve para manejar procesos asíncronos <3
 
+<<<<<<< HEAD
 const isBreadAvailable = true;
+=======
+const isBreadAvailable = false;
+>>>>>>> 4d21d92342b112577bae4bc3f6ed1d080fcef51e
 
 // Definición de la promesa
 

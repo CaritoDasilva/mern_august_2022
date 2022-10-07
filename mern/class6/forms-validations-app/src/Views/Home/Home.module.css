@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 7% auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-top: 5%;
+}
+
+.errors-message {
+    color: red;
+}

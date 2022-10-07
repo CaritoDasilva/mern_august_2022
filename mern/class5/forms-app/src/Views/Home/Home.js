@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { useForm } from "react-hook-form";
 
 const Home = (props) => {
+    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    // const onSubmit = data => console.log(data);
     const { user, setUser } = props;
     
 
@@ -21,8 +24,9 @@ const Home = (props) => {
 
     }
 
-    const sendUser = (e) => {
-        e.preventDefault();
+    const sendUser = (data) => {
+        console.log("🚀 ~ file: Home.js ~ line 28 ~ sendUser ~ data", data)
+        // e.preventDefault();
         console.log('USER:', user)
     }
 
@@ -30,9 +34,10 @@ const Home = (props) => {
     return(
         <div>
             <h1>Registro</h1>
-            <form onSubmit={(e) => sendUser(e)}>
+            <form onSubmit={handleSubmit(sendUser)}>
                 <label htmlFor="">Nombre Completo</label>
                 <input 
+                    {...register("fullName", { required: true })} 
                     type="text" 
                     placeholder="Ingresa tu nombre completo..." 
                     name="fullName" 

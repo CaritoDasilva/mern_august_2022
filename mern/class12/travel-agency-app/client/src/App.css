@@ -19,3 +19,12 @@ form {
 form button {
   margin-top: 5%;
 }
+
+table {
+  margin: 5% auto;
+  width: 80%!important;
+}
+
+.action-btn {
+  margin: 2%;
+}

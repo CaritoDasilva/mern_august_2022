@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+
+.card {
+  margin: 5% auto;
+  padding: 5%;
+  width: 1000px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form button {
+  margin-top: 5%;
+}
+
+table {
+  margin: 5% auto;
+  width: 80%!important;
+}
+
+.action-btn {
+  margin: 2%;
+}

@@ -24,7 +24,10 @@ const travelSchema = new Schema({
         type: Date,
         required: [true, "Los paquetes tienen que tener fecha de llegada"]
     }, 
-    comments: [commentSchema]
+    comments: {
+        type: [commentSchema], 
+        default: []
+    }
 
 }, { timestamps: true });
 

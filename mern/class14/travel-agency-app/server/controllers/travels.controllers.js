@@ -20,13 +20,29 @@ module.exports.addTravel = async (req, res) => {
 
 module.exports.getAllTravels = async (req, res) => {
     try {
-        const travels = await Travel.find();
+        const travels = await Travel.aggregate(
+            [               
+                { $project: {
+                        packageName: '$packageName',
+                        origin: '$origin',
+                        destination: '$destination',
+                        price: '$price',
+                        arrive_date: '$arrive_date',
+                        _id: "$_id",
+                        rating: { $avg: "$comments.rating" } 
+                    }
+                }, 
+            ]
+        );
+
+        // const travels = await Travel.find();
         res.json({ 
             message: 'Se han traído de manera exitosa los paquetes de la agencia',
             travels
         })
 
     } catch(err) {
+        console.log("🚀 ~ file: travels.controllers.js ~ line 50 ~ module.exports.getAllTravels= ~ err", err)
         res.status(500).json({ 
             message: 'Ups no hemos podido crear el paquete de viaje',
             err

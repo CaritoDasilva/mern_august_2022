@@ -69,8 +69,8 @@ const Home = () => {
                                 <td>{travel.origin}</td>
                                 <td>{travel.destination}</td>
                                 <td>${travel.price}</td>
-                                <td>{moment(travel.arrive_date).format('DD-MM-YYYY')}</td>
-                                <td>Acá va el promedio del rating x viaje</td>
+                                <td>{moment(travel._id.arrive_date).format('DD-MM-YYYY')}</td>
+                                <td>{travel.rating ? parseFloat(travel.rating.toFixed(2)) : 0}</td>
                                 <td>
                                     <Button variant="danger" className="action-btn" onClick={() => removeTravel(travel._id)} >Eliminar</Button>
                                     <Button variant="info" className="action-btn" onClick={() => redirectToForm(travel._id)} >Editar</Button>

@@ -5,8 +5,11 @@ import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
+import { io } from "socket.io-client";
 
 const PackageForm = () => {
+    const [socket] = useState(() => io(':8080'));
+
     const [travel, setTravel] = useState({
         packageName: '',
         origin: '',
@@ -46,6 +49,10 @@ const PackageForm = () => {
         console.log("🚀 ~ file: PackageForm.js ~ line 14 ~ PackageForm ~ travel", travel)
 
     }, [travel])
+
+    useEffect(() => {
+        socket.emit('from-client', 'Hola desde el cliente' );
+    }, [socket])
 
     const addTravel = async (values) => {
         console.log("🚀 ~ file: PackageForm.js ~ line 51 ~ addTravel ~ values", values)

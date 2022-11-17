@@ -5,30 +5,37 @@ import { deleteTravel, getAllTravels } from "../services/travel-service";
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import moment from 'moment';
+import io from "socket.io-client"
 
 const Home = () => {
 
     const [travels, setTravels] = useState([]);
     const navigate = useNavigate();
+    const [socket] = useState(() => io(':8080'));
 
-    const getTravelsFromService = async () => {
-        try {
-            const travelsFromService = await getAllTravels();
-            console.log("🚀 ~ file: Home.js ~ line 13 ~ getTravelsFromService ~ travelsFromService", travelsFromService)
-            setTravels(travelsFromService.data.travels);
-        } catch(err) {
-            console.log("🚀 ~ file: Home.js ~ line 16 ~ getTravelsFromService ~ err", err)
+    // const getTravelsFromService = async () => {
+    //     try {
+    //         const travelsFromService = await getAllTravels();
+    //         console.log("🚀 ~ file: Home.js ~ line 13 ~ getTravelsFromService ~ travelsFromService", travelsFromService)
+    //         setTravels(travelsFromService.data.travels);
+    //     } catch(err) {
+    //         console.log("🚀 ~ file: Home.js ~ line 16 ~ getTravelsFromService ~ err", err)
 
-        }
-    };
+    //     }
+    // };
 
-    useEffect(() => {
-        getTravelsFromService();
-    }, []);
+    // useEffect(() => {
+    //     getTravelsFromService();
+    // }, []);
 
     useEffect(() => {
         console.log("🚀 ~ file: Home.js ~ line 10 ~ Home ~ travels", travels)
     }, [travels]);
+
+    useEffect(() => {
+        socket.on('from-server', data => setTravels(data));
+        socket.on('get-travels', data2 => console.log('data: ', data2));
+    }, [socket]);
 
     const removeTravel = async (id) => {
         try {
